@@ -1,0 +1,14 @@
+---
+- hosts: servers
+  connection: local
+  tasks:
+   - name: run show commands
+     ios_command:
+       commands:
+        - show ver
+        - show clock
+     register: print_out
+ 
+   - name: output to screen
+     debug:
+       var: print_out
