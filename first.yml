@@ -1,8 +1,0 @@
----
-
-- hosts: servers
-  remote_user: admin
-  tasks:
-    - name: test connection
-      ping:
-      remote_user: admin
