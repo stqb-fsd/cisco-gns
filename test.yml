@@ -1,5 +1,5 @@
 ---
-- hosts: servers
+- hosts: gns-7200
   connection: local
   tasks:
    - name: run show commands
